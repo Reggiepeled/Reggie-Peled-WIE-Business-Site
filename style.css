@@ -1,0 +1,677 @@
+/*
+Theme Name: Business Site
+Theme URL:
+Author: Reggie Peled
+Description: Business Site Template
+Version: 0.1
+License: Open
+Text Domain: business-site-template
+*/
+
+
+@import url('css/normalize.css');
+@import url('css/skeleton.css');
+
+@font-face {
+	src: url('fonts/bookos.ttf');
+}
+
+@font-face {
+	src: url('fonts/corbel.ttf');
+}
+
+* {
+    color: #000000;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+    font-family: 'corbel';
+}
+
+h1 {
+	visibility: hidden;
+}
+
+h2 {
+	font-family: 'bookos';
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+}
+
+h3 {
+	font-size: 3rem;
+	margin-bottom: 15%;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+figure {
+	margin: 0;
+	text-align: center;
+}
+
+/* ------------- social media icons -------------*/
+.social img:hover {
+	filter: gray;     
+    -webkit-filter: grayscale(1);     
+    -moz-filter: grayscale(1);  
+}
+
+/*-------------- Slider ----------------------*/
+.unslider{overflow:auto;margin:0;padding:0;}
+.unslider-wrap{position:relative;}
+.unslider-wrap.unslider-carousel>li{float:left;}
+.unslider-vertical>ul{height:100%;}
+.unslider-vertical li{float:none;width:100%;}
+.unslider-fade{position:relative;}
+.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8;}
+.unslider-fade .unslider-wrap li.unslider-active{z-index:10;}
+.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none;}
+.unslider-arrow {
+	position: absolute; 
+	left: 20px;
+	z-index: 2;
+	cursor: pointer;
+	visibility: hidden;
+}
+.unslider-arrow.next{left:auto;right:20px;}
+
+.slide-container {
+  height: 407px;
+  -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    -moz-clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+	clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+}
+
+/*------------- Sticky header ----------------- */
+.header-container {
+  position: fixed;
+  width: 90%;
+  padding: 0 5%;
+  top: 0px;
+  z-index: 2;
+  background-color: white;
+}
+
+/*---------------- homepage styling ------------------- */
+header {
+	position: relative;
+    margin-bottom: 4%;
+    margin-top: 13%;
+}
+
+header img {
+	width: 100%;
+	max-width: 1800px;
+	max-height: 407px;
+    -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+    -moz-clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+	clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+}
+
+header a {
+	background-color: #21a8e0;
+	/* adding border radius */
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1.2% 5%;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+}
+
+header .title-wrap {
+	text-align: left;
+    position: absolute;
+    top: 7%;
+    left: 60%;
+    max-width: 300px;
+}
+
+p, .textwidget {
+	font-size: 1.6rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+article {
+	margin: 4% 0 2% 0;
+}
+
+/*--- Menu Styling --- */
+.blank-menu-header {
+	text-align: center;
+	margin-bottom: 5%;
+	border-bottom: 1px solid black;
+	position: relative;
+	top: 2%;
+}
+
+.blank-menu-header ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+	list-style-image: none; 
+}
+
+.blank-menu-header li {
+	display: inline;
+}
+
+.blank-menu-header ul li a:link, .blank-menu-header ul li a:visited {
+	color: black;
+	text-decoration:none;  
+	margin: 2%;
+	padding: 1% 0; 
+}
+
+a:hover, .blank-menu-header ul li a:hover {
+	color: #cccccc;
+}
+
+.blank-menu-header li:nth-child(4) a {
+	opacity: 0;
+}
+
+.logo {
+	position: absolute;
+	top: 15%;
+	margin-bottom: 5%;
+	width: 100%;
+	max-width: 90px;
+	left: 45%;
+}
+
+/*----------------- services styling ----------------*/
+.services {
+	position: relative;
+}
+
+.services h2 {
+	color: white;
+	text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.service {
+	margin: 2%;
+	position: relative;
+	display: inline-block;
+    text-align: center;
+}
+
+.service img {
+	width: 80%;
+    height: auto;
+    padding: 0 5%;
+}
+
+.service-hover {
+    position: absolute;
+    top: 95%;
+    left: 30%;
+    width: 600px;
+    margin: auto;
+    opacity: 0;
+    border: 1px solid lightgray;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.service:nth-of-type(1) .service-hover {
+    left: 0;
+}
+
+.service:nth-of-type(2) .service-hover {
+    left: -80px;
+}
+
+.service:nth-of-type(3) .service-hover {
+    left: -200px;
+}
+
+.service:nth-of-type(4) .service-hover {
+    left: -300px;
+}
+
+.service:nth-of-type(5) .service-hover {
+    left: -420px;
+}
+
+.service-hover a {
+	background-color: #21a8e0;
+	/* adding border radius */
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.5% 4%;
+    margin: 1%;
+    color: white;
+    text-decoration: none;
+}
+
+.service:hover .service-hover, .service:focus .service-hover {
+    opacity: 1;
+	background: rgba(255, 255, 255, 1);
+}
+
+/*----------------- pricing styling ----------------*/
+.pricing {
+	position: relative;
+}
+
+.pricing h2 {
+	color: white;
+	text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.pricing table {
+	width: 60%;
+	max-width: 600px;
+	margin: auto;
+	margin-bottom: 2%;
+	padding: 0 5%;
+	background-color: #f4f4f4;
+	border: 1px solid gray;
+}
+
+.pricing table tr {
+	border-bottom: 1px solid gainsboro; 
+}
+
+.pricing table tr img {
+	margin-left: 15%;
+	height: 50%;
+}
+
+.pricing table tr:last-child {
+	border-bottom: 1px solid gray;
+}
+
+.pricing table tr td {
+	border-bottom: none;
+}
+
+.pricing table tr td:first-child {
+	text-align: center;
+}
+
+.pricing table tr td:last-child {
+	color: #1E90FF;
+}
+
+img.pricing {
+	padding: 0 2%;
+}
+
+.promo {
+	margin-top: 3%;
+	position: relative;
+	display: inline-block;
+    padding: 0 2%;
+}
+
+.promo h4 {
+	position: absolute;
+	top: 40%;
+	left: 33%;
+}
+
+.promo-hover {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255, 255, 255, 1);
+}
+
+.promo:hover .promo-hover, .promo:focus .promo-hover {
+    opacity: 1;
+}
+
+/*---------------- location styling ---------------*/
+main.location {
+	max-width: 600px;
+	margin: auto;
+}
+
+div.location {
+	border: 1px solid gainsboro; 
+	display: inline-block;
+	position: relative;
+	padding: 4%;
+	padding-right: 10%;
+	margin: 1%;
+}
+
+header.location h2 {
+	color: white;
+	text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+div.location img {
+	position: absolute;
+	left: 70%;
+	top: 10%;
+	margin-left: 5%;
+}
+
+div.location p {
+	text-align: left;
+	font-size: 1.5rem;
+}
+
+/*----------------- about styling ----------------*/
+.about {
+	position: relative;
+}
+
+.about h2 {
+	color: black;
+	text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.bio {
+	margin-top: 3%;
+	position: relative;
+	display: inline-block;
+    width: 30%;
+}
+
+.bio img {
+    width: 80%;
+    height: auto;
+}
+
+.bio-hover {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.bio:hover .bio-hover, .bio:focus .bio-hover {
+    opacity: 1;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+/*--------------- contact style -----------------*/
+.contact h2 {
+	color: black;
+	text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.contact table {
+	margin-left: 5%;
+	width: 60%;
+	margin: auto;
+	margin-top: 12%;
+}
+
+.contact table tr td {
+	border-bottom: none;
+	padding: 2% 0;
+}
+
+.contact table tr td:first-child {
+	border-left: 1px solid gray;
+	padding-left: 3%;
+}
+
+.contact table tr td img {
+	width: 50%;
+	max-width: 40px;
+}
+
+form {
+	margin: auto;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    background-color: #e7e7e7;
+    color: #000;
+    width: 80%;
+    padding: 5px 0;
+    height: 50px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.wpcf7 textarea {
+	height: 100px;
+}
+
+.wpcf7 input::placeholder, .wpcf7 textarea::placeholder {
+	font-size: 1rem;
+	color: gray;
+}
+
+.wpcf7 input[type="submit"] {
+	background-color: #21a8e0;
+	color: white;
+	border: none;
+	line-height: 30px;
+	height: 30px;
+	padding: 0 20px;
+	text-transform: none;
+	font-family: 'corbel';
+	font-size: 1.2rem;
+	letter-spacing: normal;
+	margin-top: 2%;
+}
+
+.wpcf7 input[type="submit"]:nth-of-type(2) {
+	background-color: white;
+	color: #21a8e0;
+	border: 1px solid #21a8e0;
+}
+
+/*---------------- blog styling -----------------*/
+.blog {
+	text-align: left
+}
+
+.blog img {
+	clip-path: none;
+}
+
+.blog h2 {
+	position: absolute;
+    top: 30%;
+    left: 0%;
+	background-color: hsla(360, 100%, 100%, 0.85);
+	padding: 0.5% 0 0.5% 5%;
+	color: black;
+	width: 100%;
+}
+
+.blog h2 span {
+	font-size: 1.5rem;
+}
+
+.post-wrapper {
+	border: 1px solid gray;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.post-wrapper .wp-post-image {
+	width: 100%;
+	max-height: 160px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.post-wrapper a {
+	text-decoration: none;
+	font-size: 2rem;
+	color: #21a8e0;
+}
+
+.text-wrapper {
+	padding: 5%;
+	padding-bottom: 0;
+}
+
+.text-wrapper h3 {
+	margin-bottom: 5%;
+}
+	
+.text-wrapper h4 a {	
+	margin-top: 2%;
+	margin-bottom: 0;
+	font-size: 1.5rem;
+}
+
+/*---------------- single styling ----------------*/
+.single-wrapper {
+	margin-top: 13%;
+}
+
+.blog-post .wp-post-image {
+	width: 100%;
+	max-height: 300px;
+}
+
+.blog-post h2 {
+	color: black;
+	margin-top: 2%;
+}
+
+.blog-post p {
+	margin: 0 0 2% 0;
+	max-width: 1000px;
+}
+
+.pagination, .pagination a {
+	font-size: 1.2rem;
+	color: #21a8e0;
+}
+
+.pagination a:hover {
+	color: #cccccc;
+} 
+
+.widget-sidebar-one h3 {
+	background-color: #21a8e0;
+	color: white;
+	text-align: center;
+}
+
+.widget-sidebar-one ul {
+	list-style-type: none;
+}
+
+.widget-sidebar-one ul li a {
+	text-decoration: none;
+}
+
+/*----------------- footer styling ----------------*/
+footer {
+	background-image: url('images/footerimage.png');
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    -moz-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+	clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);	
+	margin-top: 4%;
+	padding: 2%;
+	padding-top: 4%;
+}
+
+img.foot {
+	width: 100%;
+	max-width: 90px;
+}
+
+footer .four {
+	text-align: center;
+}
+
+footer p {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.business-search-form {
+	text-align: left;
+	margin-top: 3%;
+}
+
+.button-wrap {
+	position: relative;
+	margin-top: 3%; 
+}
+
+footer input[type="search"] {
+	border: 1px solid gray;
+	/* adding border radius */
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    height: 30px;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 0;
+}
+
+footer input[type="submit"] {
+	background-image: url('images/search.png');
+	background-size: cover;
+	height: 30px; 
+	line-height: 30px;
+	border: 1px solid gray;
+	padding: 0 15px;
+	position: absolute;
+    top: 0;
+    left: 155px;
+	
+}
+/*----------------------------------------------*/
+
+.center {
+	text-align: center;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.hidden {
+	position: absolute !important;
+   	top: -9999px !important;
+   	left: -9999px !important;
+}
