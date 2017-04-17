@@ -668,20 +668,20 @@ footer p {
     left: 155px;
 	
 }
-/*---------------- 404 ------------------*/
-.error-wrapper {
+/*---------------- 404 & search styling ------------------*/
+.error-wrapper, .search-wrapper  {
 	margin-top: 13%;
 }
 
-.error-wrapper h2 {
+.error-wrapper h2, .search-wrapper h2 {
 	color: black;
 }
 
-.error-wrapper h3 {
+.error-wrapper h3, .search-wrapper h3 {
 	margin-bottom: 5%;
 }
 
-.error-wrapper p {
+.error-wrapper p, .search-wrapper p {
 	margin-left: 0;
 }
 
