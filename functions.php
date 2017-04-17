@@ -102,7 +102,7 @@ function services_func( $atts ) {
         'info' => 'bio'
     ), $atts );
 
-    return "<div class=\"service\"><img src=\"{$a['image']}\" /><h4>{$a['name']}</h4><div class=\"service-hover\"><p>{$a['info']}</p><p><a href=\"contact.php\">Schedule</a></p></div></div>";
+    return "<div class=\"service\"><img src=\"{$a['image']}\" /><h4>{$a['name']}</h4><div class=\"service-hover\"><p>{$a['info']}</p><p><a href=\"http://www.designedbyreggie.com/businesssite/contact/\">Schedule</a></p></div></div>";
 }
 add_shortcode( 'services_info', 'services_func' );
 

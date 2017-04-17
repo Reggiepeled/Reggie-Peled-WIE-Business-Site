@@ -120,9 +120,9 @@ header img {
 header a {
 	background-color: #21a8e0;
 	/* adding border radius */
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     padding: 1.2% 5%;
     color: white;
     text-decoration: none;
@@ -254,9 +254,9 @@ a:hover, .blank-menu-header ul li a:hover {
 .service-hover a {
 	background-color: #21a8e0;
 	/* adding border radius */
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     padding: 0.5% 4%;
     margin: 1%;
     color: white;
@@ -347,6 +347,10 @@ img.pricing {
     opacity: 1;
 }
 
+.promo-hover span {
+	color: #21a8e0;
+}
+
 /*---------------- location styling ---------------*/
 main.location {
 	max-width: 600px;
@@ -380,6 +384,10 @@ div.location img {
 div.location p {
 	text-align: left;
 	font-size: 1.5rem;
+}
+
+div.location span {
+	color: #21a8e0;
 }
 
 /*----------------- about styling ----------------*/
@@ -462,7 +470,7 @@ form {
     background-color: #e7e7e7;
     color: #000;
     width: 80%;
-    padding: 5px 0;
+    padding: 5px;
     height: 50px;
     border: none;
     margin-bottom: 5px;
@@ -635,7 +643,7 @@ footer p {
 	margin-top: 3%; 
 }
 
-footer input[type="search"] {
+.button-wrap input[type="search"] {
 	border: 1px solid gray;
 	/* adding border radius */
     -webkit-border-radius: 8px 8px 8px 8px;
@@ -648,7 +656,7 @@ footer input[type="search"] {
     top: 0;
 }
 
-footer input[type="submit"] {
+.button-wrap input[type="submit"] {
 	background-image: url('images/search.png');
 	background-size: cover;
 	height: 30px; 
@@ -660,8 +668,24 @@ footer input[type="submit"] {
     left: 155px;
 	
 }
-/*----------------------------------------------*/
+/*---------------- 404 ------------------*/
+.error-wrapper {
+	margin-top: 13%;
+}
 
+.error-wrapper h2 {
+	color: black;
+}
+
+.error-wrapper h3 {
+	margin-bottom: 5%;
+}
+
+.error-wrapper p {
+	margin-left: 0;
+}
+
+/*----------------------------------------------*/
 .center {
 	text-align: center;
 }
@@ -674,4 +698,39 @@ footer input[type="submit"] {
 	position: absolute !important;
    	top: -9999px !important;
    	left: -9999px !important;
+}
+
+::selection {
+    color: #569DA2;
+}
+
+/* --------- media queries --------------*/
+@media (max-width: 1200px) {
+	.single-wrapper, header, .error-wrapper {
+		margin-top: 15%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.single-wrapper, header, .error-wrapper {
+		margin-top: 17%;
+	}
+}
+
+@media (max-width: 860px) {
+	.single-wrapper, header, .error-wrapper {
+		margin-top: 22%;
+	}
+
+	.logo {
+		max-width: 60px;
+		top: 25%;
+		left: 48%;
+	}
+
+	.blank-menu-header ul li a:link, .blank-menu-header ul li a:visited {
+		margin: 1%;
+		font-size: 1.2rem;
+	}
+
 }

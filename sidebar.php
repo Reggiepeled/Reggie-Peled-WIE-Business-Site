@@ -1,7 +1,7 @@
-<!-- dynamic_sidebar() means we are placing a widget here -->
-<?php dynamic_sidebar('sidebar-widget-one'); ?>	<!-- 'first-widget' is the 'id' we defined in the function blank_widgets_init() -->
 
-<!-- displaying the taxonomies in the sidebar */
+<?php dynamic_sidebar('sidebar-widget-one'); ?>	
+
+<!-- displaying the taxonomies in the sidebar -->
 <ul>
 	<?php 
 		$args = array(

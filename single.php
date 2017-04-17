@@ -8,11 +8,9 @@
 					<div class="blog-post">
 						<?php if ( has_post_thumbnail() ) { ?>
 						<figure>  
-							<?php		
-								the_post_thumbnail('large');
-						  }?> 
+							<?php the_post_thumbnail('large'); 
+							  }?> 
 						</figure>
-					
 						<h2><?php the_title(); ?></h2>
 						<h5><?php the_date(); ?></h5>
 						<?php the_content(); ?>
@@ -37,4 +35,6 @@
 		</div>
 	</section>
 </div>
+<!-- end container -->
+
 <?php get_footer(); ?>

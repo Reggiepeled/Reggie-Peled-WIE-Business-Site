@@ -30,7 +30,7 @@
 				</div>
 				<div class="title-wrap">
 					<h2><?php the_title(); ?></h2>
-					<a href="contact.php">Visit Us Today</a>
+					<a href="http://www.designedbyreggie.com/businesssite/contac/">Visit Us Today</a>
 				</div>
 			</header>
 		</div>
